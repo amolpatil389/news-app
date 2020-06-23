@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>News</title>
+</head>
+<body>
+    <div class="container" class="text-center">
+    <div class="jumbotron jumbotron-fluid">
+        
+          <h1 class="display-4" text-align="center">India News</h1>
+          
+        </div>
+      </div>
+    <div class ="container">
+    <div *ngFor="let article of articles">
+        <h2>{{article.title}}</h2>
+        
+        <p>{{article.description}}</p>
+        
+        <img src="{{article.urlToImage}}" alt="">
+        
+        <br><br>
+        <div class="text-center">
+            <a href="{{article.url}}" class="btn btn-outline-primary" role="button" aria-pressed="true" target="_blank" >Click Here To Read Full Article</a> <hr>
+        </div>
+        <!-- <a href="{{article.url}}" class="btn btn-outline-primary" role="button" aria-pressed="true" >Click Here To Read Full Article</a> <hr> -->
+    </div>
+</div> 
+</body>
+</html>
+
+
+

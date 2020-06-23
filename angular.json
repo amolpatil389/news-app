@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "news-app"
+    }
+  },
+  "defaultProject": "news-app",
+  "cli": {
+    "analytics": "2f69b3cc-ea7f-4dc8-b99f-2a6b9131c902"
+  }
 }
